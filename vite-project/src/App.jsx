@@ -8,6 +8,7 @@ function App() {
     <Navbar/>
   
     <h1>Hello Anushka </h1>
+    <h2>Vaibhav</h2>
     
     
 

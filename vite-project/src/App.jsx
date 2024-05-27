@@ -6,6 +6,7 @@ function App() {
   return (
     <>
     <Navbar/>
+    <h1>Hello My Name is Param</h1>
     </>
   )
 }

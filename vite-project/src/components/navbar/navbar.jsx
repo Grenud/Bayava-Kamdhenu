@@ -1,27 +1,29 @@
-
-import './navbar.css'; // Optional: if you are adding styles
+import './navbar.css';
+import '../../assets/fonts.css'; // Import the fonts.css file here
 
 export default function Navbar() {
   return (
-    <nav className="navbar">
-      <div className="navbar-brand">
-        <a href="/">BrandName</a>
-      </div>
-      <ul className="navbar-nav">
-        <li className="nav-item">
-          <a href="/">Home</a>
-        </li>
-        <li className="nav-item">
-          <a href="/about">About</a>
-        </li>
-        <li className="nav-item">
-          <a href="/services">Services</a>
-        </li>
-        <li className="nav-item">
-          <a href="/contact">Contact</a>
-        </li>
-      </ul>
-    </nav>
+    <div className="navbar-container">
+      <nav className="navbar">
+        <div className="navbar-left">
+          <a href="/" className="logo font-crimson">
+            ShopNow
+          </a>
+        </div>
+        <div className="navbar-center">
+          <ul className="nav-links">
+            <li>
+              <a href="/products">Products</a>
+            </li>
+            <li>
+              <a href="/about">About Us</a>
+            </li>
+            <li>
+              <a href="/contact">Contact</a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+    </div>
   );
 }
-

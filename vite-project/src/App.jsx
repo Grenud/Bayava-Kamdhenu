@@ -5,8 +5,8 @@ function App() {
 
   return (
     <>
-      <Navbar/>
-      <h1>Hello my name is anurag</h1>
+    <Navbar/>
+    <h1>Hello Anushka Anurag</h1>
     </>
   )
 }

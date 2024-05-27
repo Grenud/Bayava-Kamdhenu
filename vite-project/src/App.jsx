@@ -5,7 +5,8 @@ function App() {
 
   return (
     <>
-    <Navbar/>
+      <Navbar/>
+      <h1>Hello my name is anurag</h1>
     </>
   )
 }

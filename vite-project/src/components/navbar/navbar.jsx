@@ -13,13 +13,22 @@ export default function Navbar() {
         <div className="navbar-center">
           <ul className="nav-links">
             <li>
-              <a href="/products">Products</a>
+              <a href="/products">Home</a> 
             </li>
             <li>
-              <a href="/about">About Us</a>
+              <a className="nav-hover"  href="/about">Adopt Gaumata</a>
             </li>
             <li>
-              <a href="/contact">Contact</a>
+              <a className="nav-hover"  href="/contact">About Project</a>
+            </li>
+            <li>
+              <a className="nav-hover"  href="/contact">Join Mission</a>
+            </li>
+            <li>
+              <a className="nav-hover"  href="/contact">Shop</a>
+            </li>
+            <li>
+              <a className="nav-hover"   href="/contact">Contact us</a>
             </li>
           </ul>
         </div>

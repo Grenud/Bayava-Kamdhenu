@@ -1,29 +1,39 @@
-import './navbar.css';
-import '../../assets/fonts.css'; // Import the fonts.css file here
+import "./navbar.css";
+import "../../assets/fonts.css";
+import logo from "../../assets/cow-icon.png";
 
 export default function Navbar() {
   return (
-    <div className="navbar-container">
-      <nav className="navbar">
-        <div className="navbar-left">
-          <a href="/" className="logo font-crimson">
-            ShopNow
-          </a>
-        </div>
-        <div className="navbar-center">
-          <ul className="nav-links">
-            <li>
-              <a href="/products">Products</a>
-            </li>
-            <li>
-              <a href="/about">About Us</a>
-            </li>
-            <li>
-              <a href="/contact">Contact</a>
-            </li>
-          </ul>
-        </div>
-      </nav>
+    <div className="navbar">
+      <div className="navbar-logo">
+        <img src={logo} alt="Logo" />
+      </div>
+      <ul className="nav-links">
+        <li>
+          <a href="/Home">Home</a>
+          <hr />
+        </li>
+        <li>
+          <a href="/Adopt Gaumata">Adopt Gaumata</a>
+          <hr />
+        </li>
+        <li>
+          <a href="/About Project">About Project</a>
+          <hr />
+        </li>
+        <li>
+          <a href="/Join Mission">Join Mission</a>
+          <hr />
+        </li>
+        <li>
+          <a href="/Shop">Shop</a>
+          <hr />
+        </li>
+        <li>
+          <a href="/Contact us">Contact us</a>
+          <hr />
+        </li>
+      </ul>
     </div>
   );
 }

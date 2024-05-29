@@ -1,29 +1,25 @@
-import Navbar from './components/navbar/navbar.jsx'
+import Cow from './components/Cow/Cow.jsx';
+import Header from './components/Header/Header.jsx';
+import Main from './components/Main/Main.jsx';
+import Footer from './components/footer/footer.jsx';
+
+import Navbar from './components/navbar/navbar.jsx';
+
+
 
 function App() {
  
 
   return (
-    <>
+    <div>
     <Navbar/>
-  
-    <h1>Hello Anushka </h1>
-
-      <h2>Vaibhav</h2>
-      <h3>anurag</h3>
-
-    <h2>Vaibhav</h2>
-
-    <h3>Hello</h3>
+    <Header/>
+    <Main/>
+    <Cow/>
+    <Footer/>
     
-
-    
-
-    <h3>Param</h3>
-
-    
-
-    </>
+   
+    </div>
   )
 }
 

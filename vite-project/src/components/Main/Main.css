@@ -1,0 +1,70 @@
+.container {
+    background: url('../../assets/grass.png');
+    width: 100vw;
+    height: 100vh; 
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+}
+
+.head {
+    
+    display: flex;
+    align-items: flex-start; 
+    /* margin-left: 20px; */
+}
+
+.head h2 {
+    margin-left: 20px;
+    font-size: 36px; 
+    margin-bottom: 20px;
+    margin-top: 100px;
+    color: #213547;
+}
+
+
+
+.head button {
+    margin-top: 100px;
+    margin-left: 800px;
+    border-radius: 20px;
+    font-size: 20px;
+    font-weight: 600;
+    background: #03C04A;
+    color: white;
+    padding: 15px;
+    border: 1px solid transparent;
+    cursor: pointer;
+    font-family: inherit;
+    color: white;
+    transition: border-color 0.25s;
+}
+button:hover {
+    border-color: #5f63ad;
+  }
+  button:focus,
+  button:focus-visible {
+    outline: 4px auto -webkit-focus-ring-color;
+  }
+
+
+.intro {
+    display: flex;
+    margin-top: 30px;
+}
+.intro img{
+    margin-right: 50px;
+    width: 500px;
+    height: 550px;
+   
+}
+
+.intro p {
+    margin-top: 50px;
+    font-size: 18px;
+    margin-left: 20px;
+    margin-right: 20px;
+    font-weight: 600;
+    color: #213547;
+}

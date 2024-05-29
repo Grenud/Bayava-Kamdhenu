@@ -1,0 +1,82 @@
+.hero-container {
+    height: 100vh;
+    position: relative;
+    display: flex;
+   
+}
+
+.hero {
+    position: relative;
+    color: #213547;
+}
+
+.hero h2 {
+    margin-top: 300px;
+    margin-left: 50px;
+    position: absolute;
+    font-size: 56px;
+    font-weight: 600;
+    
+}
+
+.hero p {
+    margin-top: 400px;
+    margin-left: 50px;
+    position: absolute;
+    font-size: 26px;
+    font-weight: 600;
+    
+}
+
+.animated-image {
+    width: 100vw;
+    height: 100vh; 
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    animation: change 20s infinite ease-in;
+}
+
+@keyframes change {
+    0% { background-image: url('../../assets/cow.png'); }
+    20% { background-image: url('../../assets/cowcover1.png'); }
+    40% { background-image: url('../../assets/cowcover2.png'); }
+    60% { background-image: url('../../assets/cowcover3.png'); }
+    80% { background-image: url('../../assets/cowcover4.png'); }
+    100% { background-image: url('../../assets/cowcover5.png'); }
+}
+
+.learn-btn button {
+    margin-left: 40px;
+    top: 450px;
+    left: 20px;
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+    width: 250px;
+    height: 55px;
+    border-radius: 15px;
+    margin-top: 30px;
+    background: #03C04A;
+    border: 1px solid transparent;
+    cursor: pointer;
+    font-family: inherit;
+    font-weight: 600;
+    color: white;
+    font-size: 21px;
+    transition: border-color 0.25s;
+}
+
+  button:hover {
+    border-color: #5f63ad;
+  }
+  button:focus,
+  button:focus-visible {
+    outline: 4px auto -webkit-focus-ring-color;
+  }
+
+.learn-btn img {
+    width: 30px;
+}

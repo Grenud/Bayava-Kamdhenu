@@ -1,6 +1,9 @@
 import "./navbar.css";
 import "../../assets/fonts.css";
 import logo from "../../assets/cow-icon.png";
+// import { Link } from "react-router-dom";
+// import Aboutus from "../Pages/Aboutus";
+// import Home from "../Pages/Home";
 
 export default function Navbar() {
   return (
@@ -10,16 +13,16 @@ export default function Navbar() {
       </div>
       <ul className="nav-links">
         <li>
-          <a href="/Home">Home</a>
-          <hr />
+         {/* <Link to={<Home/>}> </Link> */}
+         <a>Home</a> <hr />
         </li>
         <li>
-          <a href="/Adopt Gaumata">Adopt Gaumata</a>
-          <hr />
+          {/* <Link></Link> */}
+          <a>Adopt Gaumata</a><hr />
         </li>
         <li>
-          <a href="/About Project">About Project</a>
-          <hr />
+         {/* <Link to={<Aboutus/>}></Link> */}
+          <a>About Project</a> <hr />
         </li>
         <li>
           <a href="/Join Mission">Join Mission</a>

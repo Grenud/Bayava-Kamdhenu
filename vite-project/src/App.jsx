@@ -1,26 +1,26 @@
-import Cow from './components/Cow/Cow.jsx';
-import Header from './components/Header/Header.jsx';
-import Main from './components/Main/Main.jsx';
-import Footer from './components/footer/footer.jsx';
-
-import Navbar from './components/navbar/navbar.jsx';
+// import Home from "./components/Pages/Home";
+import Aboutus from "./components/Pages/Aboutus"
+// import { Routes, Route } from 'react-router-dom';
+// import Navbar from "./components/navbar/navbar";
 
 
 
 function App() {
- 
+
 
   return (
     <div>
-    <Navbar/>
-    <Header/>
-    <Main/>
-    <Cow/>
-    <Footer/>
+      <Aboutus/>
+      {/* <Routes>
+        <Route path='/' element={<Home/>} />
+        <Route path='/Aboutus' element={<Aboutus/>} />
+         <route path='/Contact' element={<Contact/>} 
+    </Routes> */}
+      
     
-   
     </div>
   )
 }
 
 export default App
+{/* <Home /> */}

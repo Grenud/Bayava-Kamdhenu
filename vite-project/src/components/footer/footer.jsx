@@ -2,7 +2,7 @@ import React from 'react'
 import cowprint from '../../assets/cowprint.png'
 import './footer.css'
 
-export default function footer() {
+export default function Footer() {
     console.log("Hello Footer")
   return (
     

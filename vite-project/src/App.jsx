@@ -1,12 +1,21 @@
+
+
+
+import AdoptGaumata from "./components/Pages/AdoptGaumata"
 import Home from "./components/Pages/Home"
 
 function App() {
  
 
+  
+  
   return (
     <div>
-   <Home/>
+      <Home />
+   <AdoptGaumata/>
     </div>
+    
+    
   )
 }
 

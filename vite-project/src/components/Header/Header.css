@@ -1,39 +1,75 @@
+/* Universal reset and box-sizing */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body styling */
+body {
+    margin: 0;
+    padding: 0;
+    color: #282b66;
+}
+
+/* Hero container styling */
 .hero-container {
     height: 100vh;
     position: relative;
     display: flex;
-   
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+    overflow: hidden; /* Prevent overflow */
 }
 
 .hero {
-    position: relative;
     color: #213547;
+    width: 100%;
+    display: flex;
+    flex-direction: column; /* Ensure proper column layout on mobile */
+    align-items: center;
+    justify-content: center; /* Center content on mobile */
+    position: relative;
+    z-index: 1;
+}
+
+.hero-text {
+    max-width: 700px;
+    padding: 20px;
+    margin: 0; /* Reset margin for mobile */
+    text-align: center; /* Center text on mobile */
+}
+
+.hero-text h2,
+.hero-text p {
+    margin: 0;
+    padding: 0;
 }
 
 .hero h2 {
-    margin-top: 300px;
-    margin-left: 50px;
-    position: absolute;
-    font-size: 56px;
+    font-size: 4.8rem;
     font-weight: 600;
-    
+    margin-top: 40px; /* Adjust margin for mobile */
+    margin-right: 130px;
 }
 
 .hero p {
-    margin-top: 400px;
-    margin-left: 50px;
-    position: absolute;
-    font-size: 26px;
+    font-size: 2.2rem;
     font-weight: 600;
-    
+    margin-top: 20px;
 }
 
 .animated-image {
-    width: 100vw;
-    height: 100vh; 
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
+    z-index: -1;
     animation: change 20s infinite ease-in;
 }
 
@@ -46,37 +82,127 @@
     100% { background-image: url('../../assets/cowcover5.png'); }
 }
 
+.learn-btn {
+    margin-top: 30px;
+    width: 100%;
+    display: flex;
+    justify-content: start; /* Center button on mobile */
+}
+
 .learn-btn button {
-    margin-left: 40px;
-    top: 450px;
-    left: 20px;
-    position: absolute;
     display: flex;
     justify-content: center;
     align-items: center;
     gap: 15px;
-    width: 250px;
+    width: 100%;
+    max-width: 250px;
+    padding: 10px;
     height: 55px;
     border-radius: 15px;
-    margin-top: 30px;
     background: #03C04A;
     border: 1px solid transparent;
     cursor: pointer;
     font-family: inherit;
     font-weight: 600;
     color: white;
-    font-size: 21px;
+    font-size: 1rem;
     transition: border-color 0.25s;
 }
 
-  button:hover {
+.learn-btn button:hover {
     border-color: #5f63ad;
-  }
-  button:focus,
-  button:focus-visible {
+}
+
+.learn-btn button:focus,
+.learn-btn button:focus-visible {
     outline: 4px auto -webkit-focus-ring-color;
-  }
+}
 
 .learn-btn img {
-    width: 30px;
+    width: 20px;
+}
+
+/* Media queries for larger screens */
+@media (min-width: 768px) {
+    .hero {
+        flex-direction: row; /* Revert to row layout on larger screens */
+        align-items: center;
+        justify-content: flex-start;
+    }
+
+    .hero h2 {
+        font-size: 3rem;
+        margin-bottom: 10px;
+    }
+
+    .hero p {
+        font-size: 1.5rem;
+        margin-bottom: 40px;
+    }
+
+    .learn-btn {
+        justify-content: flex-start; /* Align button to the start */
+    }
+
+    .learn-btn button {
+        font-size: 1.1rem;
+        width: auto;
+        max-width: 300px;
+        padding: 8px;
+    }
+
+    .learn-btn img {
+        width: 25px;
+    }
+}
+
+@media (min-width: 1024px) {
+    .hero-container {
+        padding: 50px;
+    }
+
+    .hero h2 {
+        font-size: 5rem;
+    }
+
+    .hero p {
+        font-size: 2rem;
+    }
+
+    .learn-btn button {
+        font-size: 1.8rem;
+        width: auto;
+        max-width: 350px;
+        padding: 30px;
+    }
+
+    .learn-btn img {
+        width: 30px;
+    }
+}
+
+/* Media query for mobile devices */
+@media (max-width: 480px) {
+    .hero h2 {
+        font-size: 1.8rem;/* Decrease font size for h2 */
+         margin-right: 60px;
+    }
+
+    .hero p {
+        font-size: 0.8rem; /* Decrease font size for p */
+        margin-right: 20px;
+    }
+
+    .learn-btn button {
+        font-size: 0.8rem; /* Decrease font size for button text */
+        padding: 5px; /* Adjust padding */
+        height: 35px; /* Adjust height */
+        max-width: 50%; /* Decrease max-width */
+        margin-bottom: 20px;
+      
+    }
+
+    .learn-btn img {
+        width: 15px; /* Adjust image size */
+    }
 }

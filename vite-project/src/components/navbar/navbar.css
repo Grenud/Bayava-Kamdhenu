@@ -1,19 +1,17 @@
 .navbar {
   display: flex;
   justify-content: space-between;
-  box-shadow: 0 1px 3px -2px black;
-  height : 100px;
-  width: 100vw;
-  
- 
-  
+    box-shadow: 0 1px 3px -2px black;
+      height: 100px;
+      width: 100%;
+  box-shadow: 10px 10px black ;
 }
 
 .navbar-logo img {
   
   gap: 10px;
   width: 150px;
-  height: 110px;
+  height: 100px;
 }
 
 .nav-links {

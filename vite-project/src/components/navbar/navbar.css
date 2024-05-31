@@ -8,6 +8,7 @@
 .navbar {
   display: grid;
   justify-content: space-between;
+
   box-shadow: 0 1px 3px -2px black;
   height: 8rem;
   width: 100%;
@@ -22,11 +23,11 @@
   justify-content: start;
   grid-column: 1/2;
   gap: 10px;
-}
 
 .nav-logo img {
   width: 150px;
   height: 100px;
+
 }
 
 .menu-icon {
@@ -45,7 +46,9 @@
   align-items: center;
   font-size: 9rem;
   list-style: none;
+
   grid-column: 2/5;
+
 }
 
 .nav-menu li {

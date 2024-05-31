@@ -1,3 +1,4 @@
+
 import React, { useState } from 'react';
 import logo from '../../assets/cow-icon.png';
 import { Link } from 'react-router-dom';
@@ -53,6 +54,7 @@ const Navbar = () => {
             </ul>
         </div>
     );
+
 }
 
 export default Navbar;

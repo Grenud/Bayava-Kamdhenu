@@ -1,3 +1,4 @@
+
 import Footer from './components/footer/footer.jsx';
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import Navbar from './components/navbar/navbar.jsx';
@@ -28,3 +29,4 @@ function App() {
 }
 
 export default App;
+

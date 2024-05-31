@@ -4,6 +4,7 @@ import './Header.css';
 
 export default function Header() {
   return (
+
     <div className="hero-container">
       <div className="hero">
         <div className="hero-text">
@@ -17,6 +18,7 @@ export default function Header() {
             </button>
           </div>
         </div>
+
       </div>
       <div className="animated-image"></div>
     </div>

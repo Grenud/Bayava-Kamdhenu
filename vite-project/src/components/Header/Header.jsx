@@ -11,7 +11,8 @@ export default function Header() {
         <div className='animated-image'></div>
       </div>
       <div className='learn-btn'>
-        <button>Learn More
+        <button>
+          Learn More
         <img src={arrow} alt='Arrow' />
         </button>
       </div>

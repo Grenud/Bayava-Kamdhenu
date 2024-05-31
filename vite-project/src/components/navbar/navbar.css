@@ -1,17 +1,24 @@
 .navbar {
   display: flex;
   justify-content: space-between;
+
     box-shadow: 0 1px 3px -2px black;
       height: 100px;
       width: 100%;
   box-shadow: 10px 10px black ;
+
 }
 
 .navbar-logo img {
   
   gap: 10px;
-  width: 150px;
-  height: 100px;
+
+  width: 130px;
+  height: 95px;
+  border-radius: 60px;
+  margin-left: 20px;
+  margin-top: 2px;
+
 }
 
 .nav-links {
@@ -22,7 +29,6 @@
   gap: 50px;
   color: #626262;
   font-size: 20px;
-
   margin-right: 50px;
 }
 .nav-links a {

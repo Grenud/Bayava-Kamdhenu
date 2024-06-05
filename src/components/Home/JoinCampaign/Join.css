@@ -1,0 +1,129 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.main-container {
+  position: relative;
+  width: 100%;
+  min-height: 100vh; /* Ensure it covers at least the viewport height */
+}
+
+.PichwaiCow {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: auto; /* Maintain aspect ratio */
+  min-height: 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-image: url('../../../assets/Cow-outline.png'); 
+  z-index: -1;
+}
+
+.heading {
+  font-size: 35px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 50px 0;
+  text-align: center;
+  position: relative;
+  z-index: 1; /* Ensuring it appears above the background */
+  color: #213547;
+  padding: 10px;
+  border-radius: 10px;
+  background: transparent;
+}
+
+.box {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: nowrap;
+  margin: 2rem auto;
+  padding: 2rem;
+  max-width: 1200px;
+  gap: 4rem;
+  position: relative;
+  z-index: 1; /* Ensuring it appears above the background */
+}
+
+.box-item {
+  color: #213547;
+  font-size: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  padding: 3rem;
+  min-width: 350px;
+  height: 350px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  background-color: rgba(255, 255, 255, 0.8); /* Adding a semi-transparent background for better readability */
+  text-align: center;
+  transition: transform 0.2s; /* Apply transition for scaling */
+}
+
+.box-item:hover {
+  transform: scale(1.1); /* Scale the box on hover */
+  border: 2px solid #213547; /* Change border color on hover */
+}
+
+.icon {
+  font-size: 55px;
+  margin-bottom: 1rem;
+}
+
+/* Responsive design for tablets */
+@media (max-width: 768px) {
+  .heading {
+    font-size: 28px;
+  }
+
+  .box {
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 1rem;
+  }
+
+  .box-item {
+    width: 80%;
+    margin: 1rem 0;
+    padding: 2rem;
+    height: auto;
+    min-width: 300px;
+  }
+}
+
+/* Responsive design for mobile devices */
+@media (max-width: 480px) {
+  .heading {
+    font-size: 16px;
+    margin: 20px 0;
+  }
+
+  .box {
+    flex-direction: column;
+    align-items: center;
+    padding: 1rem;
+    gap: 1rem;
+  }
+
+  .box-item {
+    font-size: 13px;
+    width: 90%;
+    padding: 1.5rem;
+    height: auto;
+    margin: 1rem 0;
+    min-width: auto;
+  }
+
+  .icon {
+    font-size: 35px;
+  }
+}

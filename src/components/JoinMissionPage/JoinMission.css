@@ -1,0 +1,124 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+   
+}
+.head-data {
+    background: #eff6e8;
+}
+
+.Ashram {
+    width: 100vw; 
+    height: auto; 
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden; 
+    
+}
+
+.Ashram img {
+    width: 100%;
+    height: auto; 
+    display: block; 
+}
+
+.paragraph {
+    margin: 5rem 0;
+    display: flex;
+    justify-content: flex-start;
+    width: 100%;
+}
+.paragraph img {
+    width: 80%;
+    margin: 3rem;
+}
+.paragraph p {
+    margin: 4rem;
+    font-size: 20px;
+}
+
+.table {
+    width: 100%;
+    height: auto;
+    padding: 3rem;
+    line-height: 50px;
+    align-items: center;
+    font-size: 15px;
+}
+button{
+    border-radius: 20px;
+    font-size: 20px;
+    font-weight: 600;
+    background: #03C04A;
+    color: white;
+    padding: 15px 30px;
+    border: 1px solid transparent;
+    cursor: pointer;
+    transition: border-color 0.25s;
+    margin: 50px 50px;
+  
+}
+
+/* Media query for devices with a maximum width of 768px (tablets and below) */
+@media (max-width: 768px) {
+    .paragraph {
+        margin: 4rem 0;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .paragraph p {
+        margin: 2rem;
+        font-size: 18px;
+    }
+   .button{
+       font-size: 10px;
+         padding: 10px;
+        border-radius: 10px;
+
+   }
+    .table {
+        padding: 2rem;
+        line-height: 40px;
+    }
+}
+
+/* Media query for devices with a maximum width of 480px (mobile) */
+@media (max-width: 480px) {
+    .Ashram img {
+        width: 100%;
+        height: 100%;
+    }
+
+    .paragraph {
+        margin: 1rem 0;
+    }
+
+    .paragraph p {
+        margin: 1rem;
+        font-size: 12px;
+    }
+     .paragraph img{
+        width: 70%;
+     }
+    .table {
+        padding: 1rem;
+        line-height: 20px;
+    }
+    .button{
+        font-size: 10px;
+        margin-top: 15px;
+        padding: 10px 10px;
+    }
+
+    .table td {
+        font-size: 14px;
+        padding: 0.5rem;
+    }
+
+    .table tr:nth-child(2) td {
+        font-size: 10px;
+    }
+}

@@ -1,0 +1,138 @@
+.login_form {
+    margin: 50px;
+}
+
+.login_form h1 {
+    font-size: 60px;
+}
+
+.login_value {
+    margin-top: 50px;
+    border: 1px solid rgb(164, 163, 163);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 20px;
+    padding: 40px;
+}
+
+label {
+    margin-bottom: 10px;
+    font-size: 30px;
+}
+
+input {
+    margin-top: 20px;
+    padding: 8px;
+    width: 90%;
+}
+
+.form-actions {
+    display: flex;
+    align-items: center; /* Center align items vertically */
+    margin-top: 20px;
+}
+
+.form-actions button {
+    margin-right: 30px; /* Add some space between the button and the checkbox */
+    margin-left: 10px;
+}
+
+.remember-me {
+    display: flex;
+    align-items: center;
+}
+
+.remember-me input[type="checkbox"] {
+    transform: scale(1.7); /* Increase the size of the checkbox */
+    margin-right: 10px; /* Add some space between the checkbox and the label */
+}
+
+.remember-me span {
+    font-size: 25px; /* Adjust the font size if needed */
+}
+
+/* Responsive styles for tablets */
+@media (max-width: 768px) {
+    .login_form {
+        margin: 20px;
+    }
+    
+    .login_form h1 {
+        font-size: 40px;
+    }
+
+    .login_value {
+        margin-bottom: 20px;
+        padding: 40px;
+    }
+
+    label {
+        font-size: 24px;
+    }
+
+    input {
+        width: 100%;
+    }
+
+    .form-actions {
+        flex-direction: row; /* Stack button and checkbox vertically */
+        align-items: flex-start; /* Align items to the start */
+    }
+
+    .form-actions button {
+        margin-bottom: 10px; /* Add space below the button */
+        margin-left: 0; /* Remove left margin */
+    }
+
+    .remember-me input[type="checkbox"] {
+        transform: scale(1.5); /* Adjust size for smaller screens */
+    }
+
+    .remember-me span {
+        font-size: 20px; /* Adjust the font size */
+    }
+}
+
+/* Responsive styles for mobile devices */
+@media (max-width: 480px) {
+    .login_form {
+        margin: 10px;
+    }
+
+    .login_form h1 {
+        margin-top: 30px;
+        font-size: 30px;
+        text-align: center;
+    }
+
+    .login_value {
+        padding: 20px;
+    }
+
+    label {
+        font-size: 20px;
+    }
+
+    input {
+        width: 100%;
+        padding: 5px;
+    }
+
+    .form-actions {
+        flex-direction: column; /* Stack button and checkbox vertically */
+        align-items: flex-start; /* Align items to the start */
+        margin-top: 4px; /* Decrease the margin between password input and button */
+    }
+
+    .form-actions button {
+        margin-left: 0; /* Remove left margin */
+        padding: 8px 15px ;
+    }
+
+    .remember-me input[type="checkbox"] {
+        transform: scale(1.3); /* Adjust size for smaller screens */
+    }
+
+    .remember-me span {
+        font-size: 18px; /* Adjust the font size */
+    }
+}

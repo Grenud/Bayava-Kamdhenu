@@ -1,6 +1,6 @@
 import React from "react";
 import Cow from "../Home/CowPooja/CowPooja";
-import './CowPujaF.css'
+import './CowPuja.css'
 
 export default function CowPuja() {
   return (

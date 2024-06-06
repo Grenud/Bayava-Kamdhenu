@@ -1,41 +1,40 @@
-.para h1 {
+.cowpuja-section h1 {
     margin-top: 100px;
-    margin: 50px 0;
-    line-height: 50px;
     font-size: 60px;
+    margin: 50px;
 }
 
-.para p {
+.para {
     font-size: 23px;
-    line-height: 50px;
-    margin: 50px 0;
+    line-height: 30px;
+    margin: 40px;
 }
 
 /* Media queries for responsiveness */
 @media (max-width: 768px) {
-    .para h1 {
+    .cowpuja-section h1 {
         font-size: 40px; /* Decrease font size */
-        margin-top: 50px; /* Adjust top margin */
-        margin: 30px 0; /* Adjust vertical margins */
+        margin-top: 50px; /* Adjust margin */
+        margin: 20px; /* Adjust margin */
     }
 
-    .para p {
+    .para {
         font-size: 18px; /* Decrease font size */
         line-height: 25px; /* Adjust line height */
-        margin: 30px 0; /* Adjust vertical margins */
+        margin: 20px; /* Adjust margin */
     }
 }
 
 @media (max-width: 480px) {
-    .para h1 {
+    .cowpuja-section h1 {
         font-size: 30px; /* Further decrease font size */
-        margin-top: 30px; /* Adjust top margin */
-        margin: 20px 0; /* Adjust vertical margins */
+        margin-top: 30px; /* Adjust margin */
+        margin: 10px; /* Adjust margin */
     }
 
-    .para p {
+    .para {
         font-size: 15px; /* Further decrease font size */
         line-height: 20px; /* Adjust line height */
-        margin: 20px 0; /* Adjust vertical margins */
+        margin: 10px; /* Adjust margin */
     }
 }

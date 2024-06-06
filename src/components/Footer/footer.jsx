@@ -1,5 +1,5 @@
 import React from 'react';
-import cowprint from '../../assets/cowprint.png';
+import Krishna from '../../assets/krishna.png'
 import './footer.css';
 import { Link } from 'react-router-dom';
 
@@ -18,7 +18,7 @@ export default function Footer() {
               <li><a href=''>Our Products</a></li>
               <li><a href=''>Our Blog</a></li>
               <li><a href=''>Contact us</a></li>
-              <li><a href=''>My Account</a></li>
+              <li><Link to='/MyAccount'>My Account</Link></li>
               <li><a href=''>Terms & Conditions</a></li>
             </ul>
           </div>
@@ -27,15 +27,15 @@ export default function Footer() {
               <h3>About</h3>
               <li><Link to='/cowPuja'>Cow Puja</Link></li>
               <li><Link to='/Veda'>Veda About Cow</Link></li>
-              <li><a href=''>Spiritual Importance</a></li>
-              <li><a href=''>Testimonials</a></li>
-              <li><a href=''>Gallery</a></li>
-              <li><a href=''>Privacy Policy</a></li>
+              <li><Link to='/SpiritualImp'>Spiritual Importance</Link></li>
+              <li><Link to='/TestiMonial'>Testimonials</Link></li>
+              <li><Link to='/Gallery'>Gallery</Link></li>
+              <li><Link to='/Privacy_Policy'>Privacy Policy</Link></li>
               <li><a href=''>Return & Refund Policy</a></li>
             </ul>
           </div>
           <div className='col cow-image'>
-            <img src={cowprint} alt="Cow Print" />
+            <img src={Krishna} alt="Cow Print" />
           </div>
         </div>
       </div>

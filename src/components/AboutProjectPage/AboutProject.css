@@ -60,8 +60,14 @@
 
 /* Media query for mobile devices */
 @media (max-width: 768px) {
+
     .block1 h1 {
         font-size: 2rem; /* Decrease font size for better readability */
+    }
+    .block1 img{
+        
+        height: 150px;
+        
     }
     .para {
         font-size: 0.8rem;

@@ -1,0 +1,64 @@
+.para {
+    font-size: 23px;
+    line-height: 30px;
+    margin: 40px;
+}
+
+.image {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+}
+
+img {
+    width: 100%;
+    height: 300px;
+}
+
+/* Media queries for responsiveness */
+@media (max-width: 1200px) {
+    .image {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 768px) {
+    .para {
+        font-size: 20px;
+        margin: 20px;
+    }
+
+    .image {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 20px;
+    }
+
+    img {
+        height: 250px;
+    }
+}
+
+@media (max-width: 480px) {
+    .para {
+        font-size: 15px;
+        margin: 10px;
+    }
+
+    .image {
+        display: flex;
+        flex-direction: column;
+        align-items: center; /* Center images horizontally */
+        gap: 10px;
+        margin: 0 auto; /* Center the entire image container */
+    }
+
+    img {
+        width: 90%; /* Decrease width of image */
+        height: 190px; /* Decrease height of image */
+        margin-left: 10px; /* Add margin to the starting side */
+    }
+
+    .para p {
+        font-size: 13px; /* Decrease font size of p tag */
+    }
+}

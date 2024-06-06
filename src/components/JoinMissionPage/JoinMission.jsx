@@ -54,7 +54,7 @@ export default function JoinMission() {
             <tr>
               <td><strong>GUARDIANSHIP OF A COW</strong></td>
               <td><strong>WHITE<br/>custom amount</strong></td>
-              <td style={{backgroundColor: "green", color: "black"}}><strong>GREEN<br />1 month</strong></td>
+              <td style={{backgroundColor: "Lightgreen", color: "black"}}><strong>GREEN<br />1 month</strong></td>
               <td style={{backgroundColor: "#cd7f32"}}><strong>BRONZE<br />3 months</strong></td>
               <td style={{backgroundColor: "#c0c0c0", color: "black"}}><strong>SILVER<br />6 months</strong></td>
               <td style={{backgroundColor: "#ffd700", color: "black"}}><strong>GOLD<br />1 year</strong></td>

@@ -19,14 +19,12 @@
   z-index: 1000;
 }
 
-
 .nav-logo {
   margin: 1rem;
   display: flex;
   align-items: flex-start;
   justify-content: start;
   background: none;
- 
 }
 
 .animated-cow {
@@ -38,7 +36,7 @@
   background-image: url('../../assets/PichwaiCow.png'); /* path to the sprite sheet */
   background-repeat: no-repeat;
   background-size: 100px 100px; /* Adjusted size to fit the scaled sprite sheet */
-  animation: walk  steps(6) infinite, moveCow 50s linear infinite;
+  animation: walk steps(6) infinite, moveCow 50s linear infinite;
 }
 
 @keyframes walk {
@@ -100,7 +98,7 @@
   display: block;
   font-size: 1.5rem;
   font-weight: 600;
-  color: #282b66;
+  color: #841107;
   text-decoration: none;
 }
 
@@ -162,6 +160,21 @@
   .nav-menu li {
     margin: 1rem 0;
   }
+
+  .animated-cow {
+    width: 300px; /* Adjust width for tablets */
+    height: 240px; /* Adjust height for tablets */
+    background-size: 50px 50px; /* Adjust size to fit the scaled sprite sheet */
+  }
+
+  @keyframes walk {
+    from {
+      background-position: 0;
+    }
+    to {
+      background-position: -900px; /* Adjusted for smaller frame width (6 frames x 150px per frame) */
+    }
+  }
 }
 
 /* Additional styles for smaller devices */
@@ -198,12 +211,12 @@
   .nav-menu {
     display: none;
     flex-direction: column;
-    width: 70%;
+    width: 60%;
     margin-bottom: 0.25rem;
     text-align: center;
     background: #f0f0f0;
     position: absolute;
-    top: 6.0rem;
+    top: 3.0rem;
     right: 0;
   }
 
@@ -214,8 +227,22 @@
   .nav-menu li {
     text-align: center;
     width: 100%;
-    font-size: 20px;
     margin: 0 0;
     padding: 0.5rem 0;
+  }
+
+  .animated-cow {
+    width: 200px; /* Adjust width for mobile devices */
+    height: 160px; /* Adjust height for mobile devices */
+
+  }
+
+  @keyframes walk {
+    from {
+      background-position: 0;
+    }
+    to {
+      background-position: -600px; /* Adjusted for even smaller frame width (6 frames x 100px per frame) */
+    }
   }
 }

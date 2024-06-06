@@ -10,6 +10,11 @@ import { Home } from './components/Home/Home/Home.jsx';
 import AdoptGaumata from './components/AdoptGaumataPage/AdoptGaumata.jsx';
 import CowPuja from './components/FooterPages/CowPuja.jsx';
 import Veda from './components/FooterPages/Veda.jsx';
+import SpiritualImp from './components/FooterPages/SpiritualImp.jsx';
+import MyAccount from './components/FooterPages/MyAccount.jsx';
+import Testimoniali from './components/FooterPages/Testimoniali.jsx';
+import Gallery from './components/FooterPages/Gallery.jsx';
+import Privacy_Policy from './components/FooterPages/Privacy_Policy.jsx';
 
 function App() {
   return (
@@ -25,6 +30,11 @@ function App() {
           <Route path="/contact-us" element={<Contact />} />
           <Route path="/cowPuja" element={<CowPuja />} />
           <Route path='/Veda' element={<Veda />} />
+          <Route path='/SpiritualImp' element= {<SpiritualImp/>}/>
+          <Route path='/MyAccount' element={<MyAccount/>}/>
+          <Route path='/TestiMonial' element={<Testimoniali/>}/>
+          <Route path='/Gallery' element={<Gallery/>}/>
+          <Route path='/Privacy_Policy' element={<Privacy_Policy/>}/>
         </Routes>
         <Footer />
       </BrowserRouter>

@@ -1,83 +1,129 @@
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-  }
-  
-  .AdoptGaumata {
-    padding: 20px;
-  }
-  
-  .header {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    position: relative;
-    margin-bottom: 20px;
-  }
-  
-  .header h1 {
-    font-size: 60px;
-    text-align: center;
-    margin-top: 80px;
-    flex-grow: 1;
-  }
-  
-  .header button {
-    font-size: 1.4rem;
-    padding: 16px;
-    position: absolute;
-    right: 0;
-    top: 10%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    border: 2px solid transparent;
-    cursor: pointer;
-    font-family: inherit;
-    font-weight: 600;
-    color: white;
-    transition: border-color 0.25s;
-  }
-  button:hover{
-    border-color: #213547;
-  }
-  
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.AdoptGaumata {
+  padding: 20px;
+}
+
+.header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  margin-bottom: 20px;
+}
+
+.header h1 {
+  font-size: 60px;
+  text-align: center;
+  margin-top: 80px;
+  flex-grow: 1;
+}
+
+.header button {
+  font-size: 1.4rem;
+  padding: 16px;
+  position: absolute;
+  right: 0;
+  top: 10%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 2px solid transparent;
+  cursor: pointer;
+  font-family: inherit;
+  font-weight: 600;
+  color: white;
+  transition: border-color 0.25s;
+  background-color: #03C04A;
+}
+
+button:hover {
+  border-color: #213547;
+}
+
+.AdoptGau {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 30px;
+}
+
+.Gaumata {
+  border: 1px solid transparent;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
+  padding: 20px;
+  background-color: white;
+  text-align: left;
+}
+
+.Gaumata img {
+  width: 100%;
+  height: 300px;
+  object-fit: cover;
+  border-radius: 10px;
+  margin-bottom: 10px;
+}
+
+.Gaumata h1 {
+  font-size: 1.7rem;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  margin-bottom: 10px;
+}
+
+.Gaumata p {
+  font-size: 1.1rem;
+  margin-bottom: 5px;
+}
+
+
+/* Media query for mobile devices */
+@media (max-width: 480px) {
   .AdoptGau {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 30px;
-  }
-  
-  .Gaumata {
-    border: 1px solid transparent;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    grid-template-columns: 1fr; /* Display images in a single column */
+}
+ 
+  .header {
+    flex-direction: row; /* Stack items vertically on mobile */
+}
+.header h1{
+  font-size: 40px;
+}
+
+.header button {
+    margin: 20px;
+    position: static;
+    margin-top: 90px; /* Add margin between h1 and button */
+    font-size: 12px;
+    padding: 10px;
     border-radius: 10px;
-    padding: 20px;
-    background-color: white;
-    text-align: left;
-  }
-  
+
+}
+.Gaumata{
+  padding: 10px;
+  width: 300px;
+  margin-left: 20px;
+
+
+}
   .Gaumata img {
-    width: 100%;
-    height: 300px;
-    object-fit: cover;
-    border-radius: 10px;
-    margin-bottom: 10px;
-  }
-  
-  .Gaumata h1 {
-    font-size: 1.7rem;
-    white-space: nowrap;
-    overflow: hidden;
-    text-overflow: ellipsis;
-    margin-bottom: 10px;
-  }
-  
-  .Gaumata p {
-    font-size: 1.1rem;
-    margin-bottom: 5px;
+    align-items: center;
+    display: flex;
+   
+    width: 95%;
+      height: 190px; /* Adjust height for better mobile layout */
   }
 
-  
-  
+  .Gaumata h1 {
+      font-size: 1.3rem; /* Decrease font size for better readability on mobile */
+  }
+
+  .Gaumata p {
+      font-size: 0.9rem; /* Decrease font size for better readability on mobile */
+  }
+}

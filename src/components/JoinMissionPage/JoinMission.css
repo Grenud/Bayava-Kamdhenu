@@ -19,6 +19,7 @@
 }
 
 .Ashram img {
+
     width: 100%;
     height: auto; 
     display: block; 
@@ -45,8 +46,10 @@
     padding: 3rem;
     line-height: 50px;
     align-items: center;
-    font-size: 15px;
+    font-size: 18px;
+    font-weight: 600;
 }
+
 button{
     border-radius: 20px;
     font-size: 20px;
@@ -103,19 +106,20 @@ button{
      .paragraph img{
         width: 70%;
      }
-    .table {
-        padding: 1rem;
-        line-height: 20px;
+     .table {
+        width: 100%;
+        margin-top: 1rem; /* Adjusted margin-top for mobile */
+        border: 1px solid #ddd; /* Added border for mobile */
+    }
+
+    .table td {
+        font-size: 12px; /* Adjusted font size for mobile */
+        padding: 0.5rem; /* Adjusted padding for mobile */
     }
     .button{
         font-size: 10px;
         margin-top: 15px;
         padding: 10px 10px;
-    }
-
-    .table td {
-        font-size: 14px;
-        padding: 0.5rem;
     }
 
     .table tr:nth-child(2) td {

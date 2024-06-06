@@ -32,8 +32,8 @@
   margin: 50px 0;
   text-align: center;
   position: relative;
-  z-index: 1; /* Ensuring it appears above the background */
-  color: #213547;
+  z-index: 1; 
+  color: #841107;
   padding: 10px;
   border-radius: 10px;
   background: transparent;
@@ -48,11 +48,11 @@
   max-width: 1200px;
   gap: 4rem;
   position: relative;
-  z-index: 1; /* Ensuring it appears above the background */
+  z-index: 1; 
 }
 
 .box-item {
-  color: #213547;
+  color: #841107;
   font-size: 20px;
   display: flex;
   flex-direction: column;

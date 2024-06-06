@@ -15,6 +15,8 @@ import MyAccount from './components/FooterPages/MyAccount.jsx';
 import Testimoniali from './components/FooterPages/Testimoniali.jsx';
 import Gallery from './components/FooterPages/Gallery.jsx';
 import Privacy_Policy from './components/FooterPages/Privacy_Policy.jsx';
+import Shraddha from './components/AdoptGaumataPage/Shraddha.jsx';
+import Vishnupatni from './components/AdoptGaumataPage/Vishnupatni.jsx';
 
 function App() {
   return (
@@ -35,6 +37,8 @@ function App() {
           <Route path='/TestiMonial' element={<Testimoniali/>}/>
           <Route path='/Gallery' element={<Gallery/>}/>
           <Route path='/Privacy_Policy' element={<Privacy_Policy/>}/>
+          <Route path='/Shraddha_Gaumata' element={<Shraddha/>}/>
+          <Route path='/Vishnupatni_Gaumata' element={<Vishnupatni/>}/>
         </Routes>
         <Footer />
       </BrowserRouter>

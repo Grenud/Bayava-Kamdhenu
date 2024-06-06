@@ -13,6 +13,7 @@ import image9 from "../../assets/Gaumata9.jpeg";
 import image10 from "../../assets/Gaumata10.jpeg";
 import image11 from "../../assets/Gaumata11.jpeg";
 import image12 from "../../assets/Gaumata12.jpeg";
+import { Link } from "react-router-dom";
 
 
 export default function AdoptGaumata() {
@@ -24,13 +25,13 @@ export default function AdoptGaumata() {
       </div>
       <div className="AdoptGau">
         <div className="Gaumata">
-          <img src={image1} />
+         <Link to="/Shraddha_Gaumata"><img src={image1} /></Link>  
           <h1>Help us to Care Shraddha Gaumata</h1>
           <p>Support And Reward For Our sponsoring</p>
           <p>Partners GARDIANSHIP OF A COW WHITE Coustom</p>
         </div>
         <div className="Gaumata">
-          <img src={image2} />
+         <Link to="/Vishnupatni_Gaumata"><img src={image2} /></Link>
           <h1 className="aheading">Help us to Care Vishnupatni Gaumata</h1>
           <p>Support And Reward For Our sponsoring</p>
           <p>Partners GARDIANSHIP OF A COW WHITE Coustom</p>

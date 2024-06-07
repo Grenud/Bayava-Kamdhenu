@@ -17,6 +17,8 @@ import Gallery from './components/FooterPages/Gallery.jsx';
 import Privacy_Policy from './components/FooterPages/Privacy_Policy.jsx';
 import Shraddha from './components/AdoptGaumataPage/Shraddha.jsx';
 import Vishnupatni from './components/AdoptGaumataPage/Vishnupatni.jsx';
+import Vibhuti from './components/AdoptGaumataPage/Vibhuti.jsx/';
+import Login  from './components/ProfleLogin/Login.jsx';
 
 function App() {
   return (
@@ -39,6 +41,8 @@ function App() {
           <Route path='/Privacy_Policy' element={<Privacy_Policy/>}/>
           <Route path='/Shraddha_Gaumata' element={<Shraddha/>}/>
           <Route path='/Vishnupatni_Gaumata' element={<Vishnupatni/>}/>
+          <Route path='/Vibhuti_Gaumata' element={<Vibhuti/>}/>
+          <Route path='/Profile-Login' element={<Login/>}/>
         </Routes>
         <Footer />
       </BrowserRouter>

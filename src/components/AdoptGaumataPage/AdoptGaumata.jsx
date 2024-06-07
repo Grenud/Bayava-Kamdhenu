@@ -37,7 +37,7 @@ export default function AdoptGaumata() {
           <p>Partners GARDIANSHIP OF A COW WHITE Coustom</p>
         </div>
         <div className="Gaumata">
-          <img src={image3} />
+          <Link to="/Vibhuti_Gaumata"><img src={image3} /></Link>
           <h1>Help us to Care Vibhuti Gaumata</h1>
           <p>Support And Reward For Our sponsoring</p>
           <p>Partners GARDIANSHIP OF A COW WHITE Coustom</p>

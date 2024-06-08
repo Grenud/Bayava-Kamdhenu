@@ -143,7 +143,7 @@ export default function JoinMission() {
             </tr>
           </tbody>
         </table>
-        <button onClick={() => navigate("/adopt-gaumata")}><strong>Adopt A Cow</strong></button>
+        <button onClick={() => navigate("/adopt-gaumata")}>Adopt A Cow</button>
       </div>
     </div>
   );

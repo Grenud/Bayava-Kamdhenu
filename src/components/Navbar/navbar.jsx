@@ -80,6 +80,7 @@ const Navbar = () => {
           </NavLink>
           {menu === "" ? <hr /> : null}
          </li>
+         {/* css */}
       </ul>
     </div>
   );

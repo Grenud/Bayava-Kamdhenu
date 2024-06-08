@@ -2,7 +2,7 @@ import React from 'react'
 import image2 from '../../assets/Gaumata2.jpeg';
 import { TiTick } from "react-icons/ti";
 import '../AdoptGaumataPage/GaumataPages.css';
-
+/* css */
 function Vishnupatni() {
     let arr=[
         {

@@ -85,7 +85,7 @@ function Vibhuti() {
             amount6:<TiTick/>,
             amount7:<TiTick/>,
           },
-          
+    /* css */      
 ]
   return (
     <div>

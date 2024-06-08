@@ -2,9 +2,11 @@ import React from 'react';
 import './AboutProject.css'
 import Cowseva from '../../assets/Cowseva.png'
 import Cow from '../../assets/CowsevaP.png'
+import { useNavigate } from "react-router-dom";
 
 
 export default function About() {
+  const navigate = useNavigate();
   return (
     <div className='supreme'>
       <section className='block1'>
@@ -19,7 +21,7 @@ export default function About() {
           <p className='para'>People should know: donations to keep cows alive will be returned to them a hundredfold – this is evidenced by the scriptures and spoken by the holy sages.</p></span>
         <span className='right'><img src={Cow} /></span>
        
-      </section> <a><button className='adopt-btn'>ADOPT A COW</button></a>
+      </section> <a><button className='adopt-btn'onClick={() => navigate("/adopt-gaumata")} >ADOPT A COW</button></a>
     </div>
   )
 }

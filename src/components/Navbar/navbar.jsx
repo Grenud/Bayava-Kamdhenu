@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import logo from "../../assets/cow-icon.png";
 import { NavLink } from "react-router-dom";
 import "./navbar.css";
+import { IoPerson } from "react-icons/io5";
 
 const Navbar = () => {
   const [menu, setMenu] = useState("home");
@@ -67,6 +68,18 @@ const Navbar = () => {
           </NavLink>
           {menu === "contact-us" ? <hr /> : null}
         </li>
+        <li onClick={() => handleMenuClick("Profile-Login")}>
+          <NavLink style={{ textDecoration: "none" }} to="/Profile-Login">
+          <IoPerson />
+          </NavLink>
+          {menu === "Profile-Login" ? <hr /> : null}
+        </li>
+        <li onClick={() => handleMenuClick("")}>
+          <NavLink style={{ textDecoration: "none" }} to="">
+          <button className="Donatebtn1">Donate Now</button>
+          </NavLink>
+          {menu === "" ? <hr /> : null}
+         </li>
       </ul>
     </div>
   );

@@ -1,0 +1,23 @@
+.Policy{
+    margin: 30px 30px;
+}
+
+.Policy h1{
+    font-size: 50px;
+    text-align: center;
+    margin-top : 70px;
+    margin-bottom: 30px; 
+}
+.head_para{
+    margin-top: 20px;
+    margin-bottom: 40px;
+}
+
+.Policy p{
+    font-size: 18px;
+    line-height: 25px;
+}
+.Key-section h3{
+    font-size: 30px;
+    margin-bottom: 10px;
+}

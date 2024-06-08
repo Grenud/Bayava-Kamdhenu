@@ -28,14 +28,15 @@
 }
 
 .animated-cow {
+
   top: 1px;
   position: absolute;
   bottom: 0;
   width: 500px; /* Adjusted width of a single frame */
   height: 400px; /* Adjusted height of a single frame */
-  background-image: url('../../assets/PichwaiCow.png'); /* path to the sprite sheet */
+  background-image: url('../../assets/PichwaiCow.png'); 
   background-repeat: no-repeat;
-  background-size: 100px 100px; /* Adjusted size to fit the scaled sprite sheet */
+  background-size: 100px 100px; 
   animation: walk steps(6) infinite, moveCow 50s linear infinite;
 }
 

@@ -1,5 +1,6 @@
 import React from "react";
 import './AboutDevraha.css';
+import Basuri from '../../../assets/basuri_element.png'
 
 import person from '../../../assets/personCow.png';
 import { motion } from 'framer-motion';
@@ -8,13 +9,14 @@ export default function Main() {
   return (
     <motion.div initial={{ opacity: 0, scale: 0 }} whileInView={{ opacity: 1, scale: 1 }}
       transition={{ duration: 0.6 }}>
-
+      <div className="element">
+          <img src={Basuri}/>
+          </div>
+      
       <div className="p-container">
         <div className="head">
           <h2>About Sri Devraha Baba Ashram</h2>
-          <div className="element">
-            <img/>
-          </div>
+          
           <button>DONATE NOW</button>
         </div>
         <div className="intro">

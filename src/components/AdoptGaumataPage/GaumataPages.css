@@ -1,0 +1,184 @@
+/* css */
+.Heading {
+    text-align: center;
+    color: brown;
+    margin-top: 25px;
+    margin-bottom: 25px;
+}
+
+.Image {
+    width: 100%;
+    max-width: 1000px;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+    border: 2px solid white;
+    border-radius: 10%;
+}
+
+.DonateBtn {
+    display: block;
+    width: 250px;
+    height: 50px;
+    border: 1px solid white;
+    border-radius: 20px;
+    background-color: lawngreen;
+    color: white;
+    font-size: x-large;
+    font-weight: bold;
+    font-family:'Courier New', Courier, monospace;
+    padding: 1%;
+    padding-bottom:2% ;
+    margin: 50px auto 0 auto;
+    margin-bottom: 30px;
+}
+
+.Link {
+    color: brown;
+    font-size: large;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-weight: bold;
+    margin: 0 30px;
+    text-decoration: none;
+}
+
+.TableIntro {
+    color: brown;
+    text-align: center;
+    font-size: x-large;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    margin: 30px;
+}
+
+.TableBorder {
+    width: 100%;
+    text-align: center;
+    border-collapse: collapse;
+    border: 2px solid black;
+    margin: 20px auto;
+    padding: 0;
+}
+
+.TableHead, .TableData {
+    text-align: center;
+    border: 2px solid black;
+    border-top: none;
+}
+
+#NameData {
+    text-align: center;
+    color:brown;
+    font-size: x-large;
+    font-weight: bold;
+}
+
+#Guardianship {
+    text-align: center;
+    color: black;
+    background-color: antiquewhite;
+    font-size: xx-large;
+    font-weight: bold;
+}
+
+#White, #Green, #Bronze, #Silver, #Gold, #Platinum, #Diamond {
+    color: black;
+    font-weight: bold;
+    font-size: large;
+}
+
+#White {
+    background-color: white;
+}
+
+#Green {
+    background-color: greenyellow;
+}
+
+#Bronze {
+    background-color: brown;
+}
+
+#Silver {
+    background-color: silver;
+}
+
+#Gold {
+    background-color: gold;
+}
+
+#Platinum {
+    background-color: lightgray;
+}
+
+#Diamond {
+    background-color: darkcyan;
+}
+
+#MainAmount {
+    color: brown;
+    font-size:large;
+    font-weight: bolder;
+    text-align: center;
+}
+
+/* Media Queries for Responsiveness */
+@media (max-width: 1200px) {
+    .Image {
+        max-width: 800px;
+    }
+    .DonateBtn {
+        margin: 40px auto 0 auto;
+    }
+}
+
+@media (max-width: 992px) {
+    .Image {
+        max-width: 600px;
+    }
+    .DonateBtn {
+        width: 200px;
+        height: 45px;
+        font-size: large;
+    }
+    .Link {
+        font-size: medium;
+    }
+    .TableIntro {
+        font-size: large;
+    }
+}
+
+@media (max-width: 768px) {
+    .Image {
+        max-width: 100%;
+    }
+    .DonateBtn {
+        width: 180px;
+        height: 40px;
+        font-size: medium;
+    }
+    .Link {
+        font-size: medium;
+        margin: 0 20px;
+    }
+    .TableIntro {
+        font-size: medium;
+    }
+}
+
+@media (max-width: 576px) {
+    .DonateBtn {
+        width: 160px;
+        height: 35px;
+        font-size: small;
+    }
+    .Link {
+        font-size: small;
+        margin: 0 15px;
+    }
+    .TableIntro {
+        font-size: small;
+        margin: 20px;
+    }
+}
+

@@ -1,16 +1,17 @@
-import React, { useState } from 'react';
-import logo from '../../assets/cow-icon.png';
-import { NavLink } from 'react-router-dom';
-import './navbar.css';
+import React, { useState } from "react";
+import logo from "../../assets/cow-icon.png";
+import { NavLink } from "react-router-dom";
+import "./navbar.css";
+import { IoPerson } from "react-icons/io5";
 
 const Navbar = () => {
-    const [menu, setMenu] = useState("home");
-    const [isMenuOpen, setIsMenuOpen] = useState(false);
+  const [menu, setMenu] = useState("home");
+  const [isMenuOpen, setIsMenuOpen] = useState(false);
 
-    const handleMenuClick = (menuName) => {
-        setMenu(menuName);
-        setIsMenuOpen(!isMenuOpen); // Toggle isMenuOpen
-    }
+  const handleMenuClick = (menuName) => {
+    setMenu(menuName);
+    setIsMenuOpen(!isMenuOpen); // Toggle isMenuOpen
+  };
 
   return (
     <div className="navbar">

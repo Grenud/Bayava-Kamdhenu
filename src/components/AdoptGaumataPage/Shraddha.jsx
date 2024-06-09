@@ -1,4 +1,4 @@
-import React from 'react'
+
 import image1 from '../../assets/Gaumata1.jpeg';
 import { TiTick } from "react-icons/ti";
 import '../AdoptGaumataPage/GaumataPages.css';

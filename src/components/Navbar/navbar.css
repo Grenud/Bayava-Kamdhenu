@@ -28,15 +28,14 @@
 }
 
 .animated-cow {
-
   top: 1px;
   position: absolute;
   bottom: 0;
   width: 500px; /* Adjusted width of a single frame */
   height: 400px; /* Adjusted height of a single frame */
-  background-image: url('../../assets/PichwaiCow.png'); 
+  background-image: url('../../assets/PichwaiCow.png'); /* path to the sprite sheet */
   background-repeat: no-repeat;
-  background-size: 100px 100px; 
+  background-size: 100px 100px; /* Adjusted size to fit the scaled sprite sheet */
   animation: walk steps(6) infinite, moveCow 50s linear infinite;
 }
 
@@ -94,6 +93,18 @@
   background-color: black;
   border-radius: 0.2rem;
 }
+
+.Donatebtn1{
+  width: 100%;
+  height:0%;
+  margin-left: 15%;
+  margin-bottom: 5%;
+  margin-top: 0%;
+  font-size: medium;
+  font-weight: bold;
+  margin-right: 0%;
+}
+/* ddd */
 
 .nav-menu a {
   display: block;

@@ -30,7 +30,7 @@ const Navbar = () => {
                     <NavLink style={{ textDecoration: 'none' }} to="/home">Home</NavLink>
                     {menu === "home" ? <hr /> : null}
                 </li>
-                <li onClick={() => handleMenuClick("adopt-gaumata ")}>
+                <li onClick={() => handleMenuClick("adopt-gaumata")}>
                     <NavLink style={{ textDecoration: 'none' }} to="/adopt-gaumata">Adopt Gaumata</NavLink>
                     {menu === "adopt-gaumata" ? <hr /> : null}
                 </li>
@@ -50,6 +50,8 @@ const Navbar = () => {
                     <NavLink style={{ textDecoration: 'none' }} to="/contact-us">Contact us</NavLink>
                     {menu === "contact-us" ? <hr /> : null}
                 </li>
+                    
+                
             </ul>
         </div>
     );

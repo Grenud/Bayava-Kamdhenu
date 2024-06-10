@@ -5,6 +5,7 @@
 }
 
 .main-container {
+  padding: 30px;
   position: relative;
   width: 100%;
   min-height: 100vh; /* Ensure it covers at least the viewport height */

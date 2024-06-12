@@ -19,6 +19,7 @@ import Shraddha from './components/AdoptGaumataPage/Shraddha.jsx';
 import Vishnupatni from './components/AdoptGaumataPage/Vishnupatni.jsx';
 import Vibhuti from './components/AdoptGaumataPage/Vibhuti.jsx/';
 // import Login  from './components/ProfleLogin/Login.jsx';
+import Login from './components/ProfileLogin/Login.jsx';
 
 function App() {
   return (
@@ -42,7 +43,7 @@ function App() {
           <Route path='/Shraddha_Gaumata' element={<Shraddha/>}/>
           <Route path='/Vishnupatni_Gaumata' element={<Vishnupatni/>}/>
           <Route path='/Vibhuti_Gaumata' element={<Vibhuti/>}/>
-          {/* <Route path='/Profile-Login' element={<Login/>}/> */}
+          <Route path='/Profile-Login' element={<Login/>}/>
         </Routes>
         <Footer />
       </BrowserRouter>
